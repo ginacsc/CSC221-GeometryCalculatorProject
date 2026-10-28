@@ -40,6 +40,10 @@ int main() {
 
         case 4:
             return 0;
+
+        default:
+            cout << "Invalid menu selection." << endl;
+            return 0;
     }
 
 cout << "Area = " << area << " square units" << endl;
