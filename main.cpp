@@ -19,22 +19,42 @@ int main() {
         case 1:
             cout << "Enter the radius of the circle: " << endl;
             cin >> radius;
-            area = pi * (radius * radius);
+            if (radius <= 0) {
+                cout << "Radius must be greater than zero." << endl;
+                return 0;
+            }
+                area = pi * (radius * radius);
             break;
 
         case 2:
             cout << "Enter the length of the rectangle: " << endl;
             cin >> length;
+            if (length <= 0) {
+                cout << "Length must be greater than zero." << endl;
+                return 0;
+            }
             cout << "Enter the width of the rectangle: " << endl;
             cin >> width;
+            if (width <= 0) {
+                cout << "Width must be greater than zero." << endl;
+                return 0;
+            }
             area = length * width;
             break;
 
         case 3:
             cout << "Enter the base of the triangle: " << endl;
             cin >> base;
+            if (base <= 0) {
+                cout << "Base must be greater than zero." << endl;
+                return 0;
+            }
             cout << "Enter the height of the triangle: " << endl;
             cin >> height;
+            if (height <= 0) {
+                cout << "Height must be greater than zero." << endl;
+                return 0;
+            }
             area = 0.5 * base * height;
             break;
 
