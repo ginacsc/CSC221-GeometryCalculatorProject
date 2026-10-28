@@ -42,6 +42,7 @@ int main() {
             return 0;
     }
 
+cout << "Area = " << area << " square units" << endl;
 
     return 0;
 }
